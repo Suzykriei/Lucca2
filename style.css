@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+video, #frame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#frame {
+  pointer-events: none;
+}
+
+.buttons {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 10;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background: #ff9800;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
